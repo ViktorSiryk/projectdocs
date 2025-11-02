@@ -71,7 +71,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-
 main {
   flex: 1;
   display: flex;
@@ -107,8 +106,6 @@ h3 {
   opacity: 0.9;
 }
 
-/* ======== Footer ======== */
-
 footer {
   text-align: center;
   padding: 1rem;
@@ -118,8 +115,6 @@ footer {
   backdrop-filter: blur(10px);
   font-size: 0.9rem;
 }
-
-/* ======== Animations ======== */
 
 @keyframes fadeIn {
   from {
@@ -135,8 +130,6 @@ footer {
 main h1, main h2, main h3 {
   animation: fadeIn 1s ease-in-out;
 }
-
-/* ======== Responsive ======== */
 
 @media (max-width: 768px) {
   nav {
@@ -154,4 +147,5 @@ main h1, main h2, main h3 {
   h3 {
     font-size: 1.2rem;
   }
+
 }
