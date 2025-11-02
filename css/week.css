@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Orbitron:wght@600&display=swap');
+
+body.week-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1b2735, #090a0f);
+  color: #f0f0f0;
+}
+
+/* Основная структура */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem; /* отступ от хедера */
+}
+
+/* ===== Заголовочный блок ===== */
+.header-block {
+  text-align: center;
+  margin-bottom: 4rem; /* расстояние между заголовками и текстом */
+}
+
+.header-block h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #a445b2, #00e0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(164, 69, 178, 0.3);
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.header-block h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: #c8e4ff;
+  font-weight: 400;
+}
+
+/* ===== Основной контент ===== */
+.week1-content {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: fadeIn 1s ease-in-out;
+  text-align: left;
+}
+
+/* Текст */
+.week1-content p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #e0e0e0;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* Кнопка */
+.main-button {
+  text-align: center;
+}
+
+.main-button a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(90deg, #00e0ff, #a445b2);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-button a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(164, 69, 178, 0.4);
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .header-block h1 {
+    font-size: 2.2rem;
+  }
+
+  .header-block h2 {
+    font-size: 1.1rem;
+  }
+
+  .week1-content {
+    padding: 2rem;
+  }
+}
