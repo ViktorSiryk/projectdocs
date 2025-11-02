@@ -8,20 +8,18 @@ body.week-page {
   color: #f0f0f0;
 }
 
-/* Основная структура */
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  margin-top: 2rem; /* отступ от хедера */
+  margin-top: 2rem;
 }
 
-/* ===== Заголовочный блок ===== */
 .header-block {
   text-align: center;
-  margin-bottom: 4rem; /* расстояние между заголовками и текстом */
+  margin-bottom: 4rem;
 }
 
 .header-block h1 {
@@ -43,7 +41,6 @@ main {
   font-weight: 400;
 }
 
-/* ===== Основной контент ===== */
 .week1-content {
   width: 100%;
   max-width: 900px;
@@ -58,7 +55,6 @@ main {
   text-align: left;
 }
 
-/* Текст */
 .week1-content p {
   line-height: 1.7;
   font-size: 1rem;
@@ -67,7 +63,6 @@ main {
   margin-bottom: 2rem;
 }
 
-/* Кнопка */
 .main-button {
   text-align: center;
 }
@@ -88,7 +83,6 @@ main {
   box-shadow: 0 0 20px rgba(164, 69, 178, 0.4);
 }
 
-/* Футер */
 footer {
   text-align: center;
   padding: 1rem;
@@ -100,7 +94,6 @@ footer {
   color: #ccc;
 }
 
-/* Анимация */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -112,7 +105,6 @@ footer {
   }
 }
 
-/* Адаптив */
 @media (max-width: 768px) {
   .header-block h1 {
     font-size: 2.2rem;

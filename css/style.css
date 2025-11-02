@@ -9,7 +9,6 @@
   --shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +23,6 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-
-/* ======== Header & Nav ======== */
 
 header {
   -webkit-backdrop-filter: blur(10px);
@@ -74,7 +71,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* ======== Main ======== */
 
 main {
   flex: 1;
